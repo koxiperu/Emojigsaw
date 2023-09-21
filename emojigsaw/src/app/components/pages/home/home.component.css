@@ -1,0 +1,18 @@
+#bodiv {
+    background-image: linear-gradient(90deg,rgb(0, 117, 86), aquamarine, rgb(0, 117, 86));
+    padding:20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+ul li{
+    margin: 10px;
+    font-size: 30px;
+    border:1px white solid;
+    padding:5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}

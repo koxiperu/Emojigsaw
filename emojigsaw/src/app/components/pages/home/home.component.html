@@ -1,0 +1,6 @@
+<div id="bodiv">
+    <ul >
+        <li *ngFor="let em of emojiArray" [innerHTML]="em.htmlCode" (click)="openInfo(em)"></li>
+    </ul>
+</div>
+

@@ -1,0 +1,24 @@
+<div id="bodiv">
+    <form id="findEmoji" (ngSubmit)="showEmoji()">
+        <div>
+            <label for="categories">Select a category</label>
+        <select id="categories" [(ngModel)]="selectedCat" (change)="loadGroups()" name="categories">
+            
+            <option *ngFor="let emoAr of emojiTypes" [value]=emoAr.category >{{emoAr.category}}</option>
+
+        </select>
+        </div>
+        <div>
+           <label for="groups">Select a group</label>
+        <select name="" id="groups" [(ngModel)]="selectedGr" name="groups">
+            <option value=""></option>
+            <option *ngFor="let grAr of selectedCategory.groups" >{{grAr}}</option>
+        </select> 
+        </div>
+        <button type="submit">find</button>        
+    </form>
+    
+    <ul >
+        <li *ngFor="let em of emojiCatArray" [innerHTML]="em.htmlCode" (click)="openInfo()"></li>
+    </ul>
+</div>
