@@ -19,6 +19,7 @@
     </form>
     
     <ul >
-        <li *ngFor="let em of emojiCatArray" [innerHTML]="em.htmlCode" (click)="openInfo()"></li>
+        <li *ngFor="let em of emojiCatArray" [innerHTML]="em.htmlCode" (click)="openInfo(em)"></li>
     </ul>
 </div>
+

@@ -1,0 +1,35 @@
+#bodiv {
+    
+    padding:20px;
+    min-height: 100vh;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+ul li{
+    margin: 10px;
+    font-size: 30px;
+    border:1px white solid;
+    padding:5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+#findEmoji select {
+    margin:10px;
+    width:50%;
+    height: 30px;
+}
+#findEmoji label{
+    color: white;
+    font-size: 30px;
+}
+#findEmoji button {
+    background-color: rgb(179, 152, 170);
+    width:10%;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 20px;
+}
